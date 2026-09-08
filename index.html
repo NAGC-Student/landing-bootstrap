@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pizzaria Da Gatinha</a>
@@ -26,6 +27,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Seção Hero / Destaque -->
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-8 col-md-10 mx-auto">
@@ -41,44 +44,63 @@
             </div>
         </div>
     </section>
+
+    <!-- 
+      Breakpoint utilizado: col-12 col-md-4
+      Por quê: No sistema de Grid do Bootstrap, a breakpoint 'md' corresponde a 768px ou mais (tablets e telas maiores).
+      Abaixo disso (mobile), 'col-12' faz com que cada card ocupe a largura inteira, empilhando-os.
+    -->
     <section id="cardapio" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center fw-bold mb-4">Mais Pedidas da Casa</h2>
 
             <div class="row g-4">
+                <!-- Card 1 -->
                 <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded bg-white text-center h-100">
-                        <h3 class="h4 fw-bold mb-2">Pizza Margherita 🧀</h3>
-                        <p class="text-secondary">
-                            Molho artesanal de tomate, muçarela especial, rodelas de tomate fresco e folhas de
-                            manjericão colhidas no dia.
-                        </p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&auto=format&fit=crop" class="card-img-top" alt="Pizza Margherita">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pizza Margherita 🧀</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Molho artesanal de tomate, muçarela especial, rodelas de tomate fresco e folhas de manjericão colhidas no dia.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">Adicionar ao carrinho</a>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Card 2 -->
                 <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded bg-white text-center h-100">
-                        <h3 class="h4 fw-bold mb-2">Pizza Calabresa 🍕</h3>
-                        <p class="text-secondary">
-                            Calabresa fatiada de primeira qualidade, cebola roxa, azeitonas pretas e uma camada generosa
-                            de orégano.
-                        </p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&auto=format&fit=crop" class="card-img-top" alt="Pizza Calabresa">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pizza Calabresa 🍕</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Calabresa fatiada de primeira qualidade, cebola roxa, azeitonas pretas e uma camada generosa de orégano.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">Adicionar ao carrinho</a>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded bg-white text-center h-100">
-                        <h3 class="h4 fw-bold mb-2">Pizza Doce Miau 🍫</h3>
-                        <p class="text-secondary">
-                            Base de chocolate ao leite cremoso, morangos frescos fatiados e raspa de chocolate branco
-                            por cima.
-                        </p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSxoN5BhNBB1qkCmWXTq0W9KcZl7_kzbrIM1OOTgODim-kgN7_K3DR1VuRzDtDBtdELNK8VsjEr_1FZPVA" class="card-img-top" alt="Pizza de Chocolate">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pizza de Chocolate 🍫</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Generosa camada de chocolate ao leite derretido, coberta com pedaços e raspas de chocolate especial.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">Adicionar ao carrinho</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
